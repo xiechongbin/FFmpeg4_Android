@@ -1,0 +1,14 @@
+prefix=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/build/x86_64
+exec_prefix=${prefix}
+libdir=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/build/x86_64/lib
+includedir=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/build/x86_64/include
+
+Name: libavfilter
+Description: FFmpeg audio/video filtering library
+Version: 7.40.101
+Requires: 
+Requires.private: libswscale >= 5.3.100, libpostproc >= 55.3.100, libavformat >= 58.20.100, libavcodec >= 58.35.100, libswresample >= 3.3.100, libavutil >= 56.22.100
+Conflicts:
+Libs: -L${libdir}  -lavfilter 
+Libs.private: -pthread -lm -L/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib -lfribidi -L/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib -lass -lm -lfontconfig -lfribidi -lfreetype -L/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib -lfontconfig -lfreetype -L/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib -lfreetype
+Cflags: -I${includedir}

@@ -1,0 +1,14 @@
+prefix=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/build/x86_64
+exec_prefix=${prefix}
+libdir=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/build/x86_64/lib
+includedir=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/build/x86_64/include
+
+Name: libavutil
+Description: FFmpeg utility library
+Version: 56.22.100
+Requires: 
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavutil 
+Libs.private: -pthread -lm
+Cflags: -I${includedir}

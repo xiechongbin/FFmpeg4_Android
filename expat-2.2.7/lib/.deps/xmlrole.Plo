@@ -1,0 +1,17 @@
+xmlrole.lo: xmlrole.c \
+ /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stddef.h \
+ ../expat_config.h expat_external.h internal.h xmlrole.h xmltok.h ascii.h
+
+/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stddef.h:
+
+../expat_config.h:
+
+expat_external.h:
+
+internal.h:
+
+xmlrole.h:
+
+xmltok.h:
+
+ascii.h:

@@ -50,3 +50,32 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+*.o
+build
+toolchain-*
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+
+
+# Thumbnails
+._*
+
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+
+### Linux ###
+*~
+
+# KDE directory preferences
+.directory
