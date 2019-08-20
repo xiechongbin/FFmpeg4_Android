@@ -1,0 +1,7 @@
+examples/.deps
+lib/.deps
+tests/.deps
+/tests/benchmark/.deps
+xmlwf/.deps
+*.o
+*.lo
