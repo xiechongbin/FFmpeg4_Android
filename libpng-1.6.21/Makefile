@@ -496,22 +496,22 @@ distcleancheck_listfiles = find . -type f -print
 
 #distribute headers in /usr/include/libpng/*
 pkgincludedir = $(includedir)/$(PNGLIB_BASENAME)
-ACLOCAL = ${SHELL} /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/cxy/AndroidFFmpeg4/libpng-1.6.21/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AR = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-ar
-AS = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-as
-AUTOCONF = ${SHELL} /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21/missing autoconf
-AUTOHEADER = ${SHELL} /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21/missing autoheader
-AUTOMAKE = ${SHELL} /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21/missing automake-1.15
+AR = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-ar
+AS = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-as
+AUTOCONF = ${SHELL} /home/cxy/AndroidFFmpeg4/libpng-1.6.21/missing autoconf
+AUTOHEADER = ${SHELL} /home/cxy/AndroidFFmpeg4/libpng-1.6.21/missing autoheader
+AUTOMAKE = ${SHELL} /home/cxy/AndroidFFmpeg4/libpng-1.6.21/missing automake-1.15
 AWK = mawk
-CC = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-gcc --sysroot=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot
-CCAS = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-gcc --sysroot=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot
+CC = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-gcc --sysroot=/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot
+CCAS = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-gcc --sysroot=/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot
 CCASDEPMODE = depmode=gcc3
 CCASFLAGS = -g -O2
 CCDEPMODE = depmode=gcc3
 CFLAGS = -g -O2
-CPP = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-cpp
+CPP = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-cpp
 CPPFLAGS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
@@ -522,7 +522,7 @@ DEPDIR = .deps
 # checks input tokens for validity - effectively it performs part of the ANSI-C
 # parsing - and therefore fails with the .df files.  configure.ac has special
 # checks for this and sets DFNCPP appropriately.
-DFNCPP = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-cpp
+DFNCPP = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-cpp
 DLLTOOL = false
 DSYMUTIL = 
 DUMPBIN = 
@@ -538,7 +538,7 @@ INSTALL_DATA = ${INSTALL} -m 644
 INSTALL_PROGRAM = ${INSTALL}
 INSTALL_SCRIPT = ${INSTALL}
 INSTALL_STRIP_PROGRAM = $(install_sh) -c -s
-LD = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-ld
+LD = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-ld
 LDFLAGS = 
 LIBOBJS =  ${LIBOBJDIR}strtod$U.o
 LIBS = -lm -lz -lm 
@@ -548,12 +548,12 @@ LN_S = ln -s
 LTLIBOBJS =  ${LIBOBJDIR}strtod$U.lo
 LT_SYS_LIBRARY_PATH = 
 MAINT = #
-MAKEINFO = ${SHELL} /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21/missing makeinfo
+MAKEINFO = ${SHELL} /home/cxy/AndroidFFmpeg4/libpng-1.6.21/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
-NM = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-nm
+NM = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-nm
 NMEDIT = 
-OBJDUMP = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-objdump
+OBJDUMP = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-objdump
 OBJEXT = o
 OTOOL = 
 OTOOL64 = 
@@ -576,17 +576,17 @@ PNGLIB_VERSION = 1.6.21
 PNG_COPTS = 
 PNG_PREFIX = 
 POW_LIB = -lm
-RANLIB = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-ranlib
+RANLIB = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-ranlib
 SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-STRIP = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/bin/x86_64-linux-android-strip
+STRIP = /home/cxy/AndroidFFmpeg4/toolchain-android/bin/x86_64-linux-android-strip
 SYMBOL_PREFIX = 
 VERSION = 1.6.21
-abs_builddir = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21
-abs_srcdir = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21
-abs_top_builddir = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21
-abs_top_srcdir = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21
+abs_builddir = /home/cxy/AndroidFFmpeg4/libpng-1.6.21
+abs_srcdir = /home/cxy/AndroidFFmpeg4/libpng-1.6.21
+abs_top_builddir = /home/cxy/AndroidFFmpeg4/libpng-1.6.21
+abs_top_srcdir = /home/cxy/AndroidFFmpeg4/libpng-1.6.21
 ac_ct_AR = 
 ac_ct_CC = 
 ac_ct_DUMPBIN = 
@@ -618,7 +618,7 @@ host_vendor = pc
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/libpng-1.6.21/install-sh
+install_sh = ${SHELL} /home/cxy/AndroidFFmpeg4/libpng-1.6.21/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -631,7 +631,7 @@ pdfdir = ${docdir}
 # pkg-config stuff, note that libpng.pc is always required in order
 # to get the correct library
 pkgconfigdir = ${libdir}/pkgconfig
-prefix = /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android
+prefix = /home/cxy/AndroidFFmpeg4/toolchain-android
 program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin

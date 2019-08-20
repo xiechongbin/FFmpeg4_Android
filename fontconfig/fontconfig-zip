@@ -7,7 +7,7 @@
 ZIP=/tmp/fontconfig-2.13.91.zip
 DEVZIP=/tmp/fontconfig-dev-2.13.91.zip
 
-cd /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android
+cd /home/cxy/AndroidFFmpeg4/toolchain-android
 rm -f $ZIP
 zip $ZIP -@ <<EOF
 bin/libfontconfig-1.dll

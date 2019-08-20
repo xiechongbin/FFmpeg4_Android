@@ -1,4 +1,4 @@
-prefix=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android
+prefix=/home/cxy/AndroidFFmpeg4/toolchain-android
 exec_prefix=${prefix}
 libdir=${exec_prefix}/lib
 includedir=${prefix}/include

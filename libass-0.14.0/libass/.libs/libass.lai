@@ -17,7 +17,7 @@ old_library='libass.a'
 inherited_linker_flags=''
 
 # Libraries that this one depends upon.
-dependency_libs=' -lm -L/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/libfribidi.la /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/libfontconfig.la /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/libexpat.la /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/libfreetype.la'
+dependency_libs=' -lm -L/home/cxy/AndroidFFmpeg4/toolchain-android/lib /home/cxy/AndroidFFmpeg4/toolchain-android/lib/libfribidi.la /home/cxy/AndroidFFmpeg4/toolchain-android/lib/libfontconfig.la /home/cxy/AndroidFFmpeg4/toolchain-android/lib/libexpat.la /home/cxy/AndroidFFmpeg4/toolchain-android/lib/libfreetype.la'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
@@ -38,4 +38,4 @@ dlopen=''
 dlpreopen=''
 
 # Directory that this library needs to be installed in:
-libdir='/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib'
+libdir='/home/cxy/AndroidFFmpeg4/toolchain-android/lib'

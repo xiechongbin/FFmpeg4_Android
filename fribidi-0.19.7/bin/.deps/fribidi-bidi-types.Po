@@ -1,29 +1,29 @@
 fribidi-bidi-types.o: fribidi-bidi-types.c \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/stdio.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/sys/cdefs.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/android/api-level.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/android/versioning.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/sys/types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stddef.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stdint.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/stdint.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/bits/wchar_limits.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm/types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm-generic/types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm-generic/int-ll64.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm/bitsperlong.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm-generic/bitsperlong.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/posix_types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/stddef.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/compiler_types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/compiler.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm/posix_types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm/posix_types_64.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm-generic/posix_types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/bits/pthread_types.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stdarg.h \
- /home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/bits/seek_constants.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/stdio.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/sys/cdefs.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/android/api-level.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/android/versioning.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/sys/types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stddef.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stdint.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/stdint.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/bits/wchar_limits.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm/types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm-generic/types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm-generic/int-ll64.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm/bitsperlong.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm-generic/bitsperlong.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/posix_types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/stddef.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/compiler_types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/compiler.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm/posix_types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm/posix_types_64.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm-generic/posix_types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/bits/pthread_types.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stdarg.h \
+ /home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/bits/seek_constants.h \
  ../lib/fribidi.h ../lib/fribidi-common.h ../lib/fribidi-config.h \
  ../lib/fribidi-unicode.h ../lib/fribidi-types.h \
  ../lib/fribidi-begindecls.h ../lib/fribidi-enddecls.h \
@@ -37,55 +37,55 @@ fribidi-bidi-types.o: fribidi-bidi-types.c \
  ../lib/fribidi-begindecls.h ../charset/fribidi-char-sets-list.h \
  ../lib/fribidi-enddecls.h ../lib/fribidi-deprecated.h
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/stdio.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/stdio.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/sys/cdefs.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/sys/cdefs.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/android/api-level.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/android/api-level.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/android/versioning.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/android/versioning.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/sys/types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/sys/types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stddef.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stddef.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stdint.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stdint.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/stdint.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/stdint.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/bits/wchar_limits.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/bits/wchar_limits.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm/types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm/types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm-generic/types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm-generic/types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm-generic/int-ll64.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm-generic/int-ll64.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm/bitsperlong.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm/bitsperlong.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm-generic/bitsperlong.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm-generic/bitsperlong.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/posix_types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/posix_types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/stddef.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/stddef.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/compiler_types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/compiler_types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/linux/compiler.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/linux/compiler.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm/posix_types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm/posix_types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm/posix_types_64.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm/posix_types_64.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/asm-generic/posix_types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/asm-generic/posix_types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/bits/pthread_types.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/bits/pthread_types.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stdarg.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/lib/gcc/x86_64-linux-android/4.9.x/include/stdarg.h:
 
-/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/sysroot/usr/include/bits/seek_constants.h:
+/home/cxy/AndroidFFmpeg4/toolchain-android/sysroot/usr/include/bits/seek_constants.h:
 
 ../lib/fribidi.h:
 
