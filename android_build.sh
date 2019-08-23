@@ -14,6 +14,7 @@ do
   rm -rf ${TOOLCHAIN_PREFIX}
 
   ./x264_build.sh $i $BASEDIR 0 || exit 1
+  ./fdk_aac_build.sh $i $BASEDIR 1 || exit 1
   ./libpng_build.sh $i $BASEDIR 1 || exit 1
   ./freetype_build.sh $i $BASEDIR 1 || exit 1
   ./expat_build.sh $i $BASEDIR 1 || exit 1

@@ -3,7 +3,7 @@ echo "开始编译ffmpeg>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
 . settings.sh $1 $2 $3
 
 pushd ffmpeg
-export PKG_CONFIG_PATH=/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/toolchain-android/lib/pkgconfig
+export PKG_CONFIG_PATH=$PKG_CONFIG_LIBDIR
 
 make clean
 
@@ -15,6 +15,8 @@ make clean
 --sysroot="$NDK_SYSROOT" \
 --enable-nonfree \
 --enable-pic \
+--enable-encoder=libfdk_aac \
+--enable-decoder=libfdk_aac \
 --enable-libx264 \
 --enable-libass \
 --enable-libfreetype \
@@ -40,7 +42,7 @@ make clean
 --disable-podpages \
 --disable-txtpages \
 --disable-indev=v4l2 \
---pkg-config="/home/cxy/Desktop/ffmpeg-0818/ffmpeg-android/ffmpeg-pkg-config" \
+--pkg-config=$FFMPEG_PKG_CONFIG \
 --prefix="${2}/build/${1}" \
 --extra-cflags="-I${TOOLCHAIN_PREFIX}/include $CFLAGS" \
 --extra-ldflags="-L${TOOLCHAIN_PREFIX}/lib $LDFLAGS" \

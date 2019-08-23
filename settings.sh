@@ -1,8 +1,8 @@
 #!/bin/bash
 
  #支持编译的平台
-#SUPPORTED_ARCHITECTURES=(armeabi armeabi-v7a armeabi-v7a-neon arm64-v8a x86 x86_64)
-SUPPORTED_ARCHITECTURES=(x86 x86_64)
+SUPPORTED_ARCHITECTURES=(armeabi armeabi-v7a armeabi-v7a-neon arm64-v8a x86 x86_64)
+#SUPPORTED_ARCHITECTURES=(x86)
 
 #ndk环境变量配置
 ANDROID_NDK_ROOT_PATH=${ANDROID_NDK}
