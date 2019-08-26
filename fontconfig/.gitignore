@@ -81,8 +81,6 @@ fc-match/fc-match
 /its//Makefile
 /its/Makefile.in
 
-/m4/
-	modified:   .gitignore
 /autom4te.cache/output.0
 /autom4te.cache/output.1
 /autom4te.cache/output.2
