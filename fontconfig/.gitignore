@@ -75,10 +75,10 @@ fc-match/fc-match
 /fc-validate/Makefile.in
 /fc-validate/fc-validate
 
-/fontconfig//Makefile
+/fontconfig/Makefile
 /fontconfig/Makefile.in
 
-/its//Makefile
+/its/Makefile
 /its/Makefile.in
 
 /autom4te.cache/output.0
@@ -143,6 +143,8 @@ fc-match/fc-match
 /m4/wint_t.m4
 /m4/xsize.m4
 
+/po/Makefile
+/po/Makefile.in
 /po/Makefile.in.in
 /po/Makevars.template
 /po/Rules-quot
@@ -151,8 +153,11 @@ fc-match/fc-match
 /po/en@quot.header
 /po/insert-header.sin
 /po/quot.sed
+/po/POTFILES
 /po/remove-potcdate.sin
 
+/po-conf/Makefile
+/po-conf/Makefile.in
 /po-conf/Makefile.in.in
 /po-conf/Makevars.template
 /po-conf/Rules-quot
@@ -161,6 +166,7 @@ fc-match/fc-match
 /po-conf/en@quot.header
 /po-conf/insert-header.sin
 /po-conf/quot.sed
+/po-conf/POTFILES
 /po-conf/remove-potcdate.sin
 
 /src/.deps
@@ -220,6 +226,7 @@ src/stamp-fcstdint
 /missing
 /stamp-h1
 /test-driver
+/ltmain.sh
 
 *.o
 *.lo
