@@ -16,7 +16,7 @@ make clean
   --enable-fontconfig \
   --disable-harfbuzz \
   --enable-static \
-  --enable-shared \
+  --disable-shared \
   --prefix="${TOOLCHAIN_PREFIX}" || exit 1
 
 make -j${NUMBER_OF_CORES} install || exit 1

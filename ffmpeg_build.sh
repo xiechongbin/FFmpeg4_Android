@@ -31,7 +31,7 @@ make clean
 --disable-ffprobe \
 --enable-gpl \
 --disable-doc \
---enable-shared \
+--disable-shared \
 --enable-static \
 --enable-small \
 --enable-muxer=adts \
@@ -48,6 +48,61 @@ make clean
 --extra-ldflags="-L${TOOLCHAIN_PREFIX}/lib $LDFLAGS" \
 --extra-libs="-lpng -lexpat -lm" \
 --extra-cxxflags="$CXX_FLAGS" || exit 1
-make -j${NUMBER_OF_CORES} && make install || exit 1
+make -j${NUMBER_OF_CORES} && make install
+ 
+#以下脚本是将产生的多个ffmpeg so 打包成单一的so库 方便使用
+export PLATFORM=$ANDROID_NDK_ROOT_PATH/platforms/android-$ANDROID_API_VERSION/$ARCH
 
+if [ "$1" = "x86_64" ] 
+then
+echo "aaadddddddccccccc"
+ ${CROSS_PREFIX}ld \
+-rpath-link=$PLATFORM/usr/lib \
+-L$PLATFORM/usr/lib \
+-L$PLATFORM/usr/lib64 \
+-L$TOOLCHAIN_PREFIX/lib \
+-soname libffmpeg_core.so -shared -nostdlib -Bsymbolic --whole-archive --no-undefined -o ${2}/build/${1}/libffmpeg_core.so \
+    $TOOLCHAIN_PREFIX/lib/libass.a \
+    $TOOLCHAIN_PREFIX/lib/libexpat.a \
+    $TOOLCHAIN_PREFIX/lib/libfdk-aac.a \
+    $TOOLCHAIN_PREFIX/lib/libfontconfig.a \
+    $TOOLCHAIN_PREFIX/lib/libfreetype.a \
+    $TOOLCHAIN_PREFIX/lib/libfribidi.a \
+    $TOOLCHAIN_PREFIX/lib/libmp3lame.a \
+    $TOOLCHAIN_PREFIX/lib/libpng.a \
+    $TOOLCHAIN_PREFIX/lib/libx264.a \
+    ${2}/build/${1}/lib/libavcodec.a \
+    ${2}/build/${1}/lib/libavfilter.a \
+    ${2}/build/${1}/lib/libswresample.a \
+    ${2}/build/${1}/lib/libavformat.a \
+    ${2}/build/${1}/lib/libavutil.a \
+    ${2}/build/${1}/lib/libswscale.a \
+    ${2}/build/${1}/lib/libpostproc.a \
+    ${2}/build/${1}/lib/libavdevice.a \
+    -lc -lm -lz -ldl -llog --dynamic-linker=/system/bin/linker \
+    $TOOLCHAIN_PREFIX/lib/gcc/$NDK_CROSS_PREFIX/4.9.x/libgcc.a
+else
+${CROSS_PREFIX}ld \
+$LD_SINGLE_SO_CONFIGURE \
+-soname libffmpeg_core.so -shared -nostdlib -Bsymbolic --whole-archive --no-undefined -o ${2}/build/${1}/libffmpeg_core.so \
+    $TOOLCHAIN_PREFIX/lib/libass.a \
+    $TOOLCHAIN_PREFIX/lib/libexpat.a \
+    $TOOLCHAIN_PREFIX/lib/libfdk-aac.a \
+    $TOOLCHAIN_PREFIX/lib/libfontconfig.a \
+    $TOOLCHAIN_PREFIX/lib/libfreetype.a \
+    $TOOLCHAIN_PREFIX/lib/libfribidi.a \
+    $TOOLCHAIN_PREFIX/lib/libmp3lame.a \
+    $TOOLCHAIN_PREFIX/lib/libpng.a \
+    $TOOLCHAIN_PREFIX/lib/libx264.a \
+    ${2}/build/${1}/lib/libavcodec.a \
+    ${2}/build/${1}/lib/libavfilter.a \
+    ${2}/build/${1}/lib/libswresample.a \
+    ${2}/build/${1}/lib/libavformat.a \
+    ${2}/build/${1}/lib/libavutil.a \
+    ${2}/build/${1}/lib/libswscale.a \
+    ${2}/build/${1}/lib/libpostproc.a \
+    ${2}/build/${1}/lib/libavdevice.a \
+    -lc -lm -lz -ldl -llog --dynamic-linker=/system/bin/linker \
+    $TOOLCHAIN_PREFIX/lib/gcc/$NDK_CROSS_PREFIX/4.9.x/libgcc.a
+fi
 popd

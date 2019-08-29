@@ -2,7 +2,7 @@
 
  #支持编译的平台
 SUPPORTED_ARCHITECTURES=(armeabi armeabi-v7a armeabi-v7a-neon arm64-v8a x86 x86_64)
-#SUPPORTED_ARCHITECTURES=(x86)
+#SUPPORTED_ARCHITECTURES=(x86_64)
 
 #ndk环境变量配置
 ANDROID_NDK_ROOT_PATH=${ANDROID_NDK}
@@ -36,49 +36,62 @@ BASEDIR=$2
 case $1 in
   armeabi)
     NDK_ABI='arm'
+    ARCH='arch-arm'
     NDK_TOOLCHAIN_ABI='arm-linux-androideabi'
     NDK_CROSS_PREFIX="${NDK_TOOLCHAIN_ABI}"
     EXTRA_CONFIGURE='--disable-asm'
+    LD_SINGLE_SO_CONFIGURE="-rpath-link=${PLATFORM}/usr/lib -L$PLATFORM/usr/lib -L$TOOLCHAIN_PREFIX/lib"
     CFLAGS='-march=armv5te -msoft-float -D__ANDROID__ -D__ARM_ARCH_5TE__ -D__ARM_ARCH_5TEJ__'
     LDFLAGS='-Wl,-z,relro -Wl,-z,now -pie -shared'
   ;;
   armeabi-v7a)
     NDK_ABI='arm'
+    ARCH='arch-arm'
     NDK_TOOLCHAIN_ABI='arm-linux-androideabi'
     NDK_CROSS_PREFIX="${NDK_TOOLCHAIN_ABI}"
     EXTRA_CONFIGURE=''
+    LD_SINGLE_SO_CONFIGURE="-rpath-link=${PLATFORM}/usr/lib -L$PLATFORM/usr/lib -L$TOOLCHAIN_PREFIX/lib"
     CFLAGS='-march=armv7-a -mfloat-abi=softfp -mfpu=neon -mthumb -D__ANDROID__ -D__ARM_ARCH_7__ -D__ARM_ARCH_7A__ -D__ARM_ARCH_7R__ -D__ARM_ARCH_7M__ -D__ARM_ARCH_7S__'
     LDFLAGS='-Wl,-z,relro -Wl,-z,now -pie -shared'
   ;;
   armeabi-v7a-neon)
     NDK_ABI='arm'
+    ARCH='arch-arm'
     NDK_TOOLCHAIN_ABI='arm-linux-androideabi'
     NDK_CROSS_PREFIX="${NDK_TOOLCHAIN_ABI}"
     EXTRA_CONFIGURE=''
+    LD_SINGLE_SO_CONFIGURE="-rpath-link=${PLATFORM}/usr/lib -L$PLATFORM/usr/lib -L$TOOLCHAIN_PREFIX/lib"
     CFLAGS='-march=armv7-a -mfloat-abi=softfp -mfpu=neon -mthumb -D__ANDROID__ -D__ARM_ARCH_7__ -D__ARM_ARCH_7A__ -D__ARM_ARCH_7R__ -D__ARM_ARCH_7M__ -D__ARM_ARCH_7S__'
     LDFLAGS='-Wl,-z,relro -Wl,-z,now -pie -shared'
   ;;
   arm64-v8a)
     NDK_ABI='arm64'
+    ARCH='arch-arm64'
     NDK_TOOLCHAIN_ABI='aarch64-linux-android'
     NDK_CROSS_PREFIX="${NDK_TOOLCHAIN_ABI}"
     EXTRA_CONFIGURE=''
+    LD_SINGLE_SO_CONFIGURE="-rpath-link=${PLATFORM}/usr/lib -L$PLATFORM/usr/lib -L$TOOLCHAIN_PREFIX/lib"
     CFLAGS='-march=armv8-a -D__ANDROID__ -D__ARM_ARCH_8__ -D__ARM_ARCH_8A__'
     LDFLAGS='-Wl,-z,relro -Wl,-z,now -pie -shared'
   ;;
   x86)
     NDK_ABI='x86'
+    ARCH='arch-x86'
     NDK_TOOLCHAIN_ABI='x86'
     NDK_CROSS_PREFIX='i686-linux-android'
     EXTRA_CONFIGURE='--disable-asm'
+    LD_SINGLE_SO_CONFIGURE="-rpath-link=${PLATFORM}/usr/lib -L$PLATFORM/usr/lib -L$TOOLCHAIN_PREFIX/lib"
     CFLAGS='-march=i686 -mtune=i686 -m32 -mmmx -msse2 -msse3 -mssse3 -D__ANDROID__ -D__i686__'
     LDFLAGS='-Wl,-z,relro -Wl,-z,now -pie -shared'
   ;;
   x86_64)
     NDK_ABI='x86_64'
+    ARCH='arch-x86_64'
     NDK_TOOLCHAIN_ABI='x86_64'
     NDK_CROSS_PREFIX="x86_64-linux-android"
     EXTRA_CONFIGURE='--disable-asm'
+    #如果是打包x86_64的so 需要将以下lib64也包含进来 否则打包失败 -L$PLATFORM/usr/lib64
+    LD_SINGLE_SO_CONFIGURE="-rpath-link=${PLATFORM}/usr/lib -L$PLATFORM/usr/lib -L$PLATFORM/usr/lib64 -L$TOOLCHAIN_PREFIX/lib"
     CFLAGS='-march=core-avx-i -mtune=core-avx-i -m64 -mmmx -msse2 -msse3 -mssse3 -msse4.1 -msse4.2 -mpopcnt -D__ANDROID__ -D__x86_64__'
     LDFLAGS='-Wl,-z,relro -Wl,-z,now -pie -shared'
   ;;
@@ -90,6 +103,7 @@ if [ ! -d "$TOOLCHAIN_PREFIX" ]; then
   ${ANDROID_NDK_ROOT_PATH}/build/tools/make-standalone-toolchain.sh --toolchain=${NDK_TOOLCHAIN_ABI}-${NDK_TOOLCHAIN_ABI_VERSION} --platform=android-${ANDROID_API_VERSION} --install-dir=${TOOLCHAIN_PREFIX}
 fi
 CROSS_PREFIX=${TOOLCHAIN_PREFIX}/bin/${NDK_CROSS_PREFIX}-
+echo $CROSS_PREFIX
 NDK_SYSROOT=${TOOLCHAIN_PREFIX}/sysroot
 
 export PKG_CONFIG_LIBDIR="${TOOLCHAIN_PREFIX}/lib/pkgconfig"

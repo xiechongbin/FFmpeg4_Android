@@ -11,13 +11,14 @@
 
 /lib/.deps
 /lib/.libs
-/test/.deps
-/test/Makefile
+/lib/Makefile
+/tests/.deps
+/tests/Makefile
 
-/test/benchmark/.deps
-/test/benchmark/.libs
-/test/benchmark/Makefile
-/test/benchmark/benchmark
+/tests/benchmark/.deps
+/tests/benchmark/.libs
+/tests/benchmark/Makefile
+/tests/benchmark/benchmark
 
 /xmlwf/.deps
 /xmlwf/.libs

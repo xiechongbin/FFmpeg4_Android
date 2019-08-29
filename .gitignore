@@ -4,3 +4,4 @@
 *.la
 *.a
 .DS_Store
+/build.zip

@@ -18,7 +18,6 @@ esac
   --with-sysroot="$NDK_SYSROOT" \
   --host="$NDK_TOOLCHAIN_ABI" \
   --enable-static \
-  --disable-shared \
   --prefix="${TOOLCHAIN_PREFIX}" \
   --disable-shared || exit 1
 
